@@ -27,6 +27,8 @@ int main()
 https://stackoverflow.com/a/1389813/13792395
 
 ```cpp
+#define NDEBUG
+#define out MyDebug(std::cout)	//不然就得在```class solution``` 的ctor里调用了,鬼知道OJ有没有其他的Solution()，果然宏啥都能做...
 
 class MyDebug
 {
