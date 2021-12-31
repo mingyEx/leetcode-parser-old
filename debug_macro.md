@@ -29,7 +29,7 @@ https://stackoverflow.com/a/1389813/13792395
 ```cpp
 //这玩意不会降低运行效率，一个初始化而已。
 
-#define biu
+//#define biu
 #define outp MyDebug(std::cout)
 
 class MyDebug
@@ -45,6 +45,13 @@ public:
 		stream << item;
 		return *this;
 	}
+#else
+	template<typename T>
+	MyDebug& operator<<(T&)	//卧槽，那个玩意是不是要往这里放一份的?
+	{
+		return *this;
+	}
+#endif
 	MyDebug& operator<<(std::ostream& (*pf)(std::ostream&))
 	{
 		stream << pf;
@@ -57,18 +64,6 @@ public:
 		stream << pf;
 		return *this;
 	}
-#else
-	template<typename T>
-	MyDebug& operator<<(T&)	//卧槽，那个玩意是不是要往这里放一份的?
-	{
-		return *this;
-	}
-	MyDebug& operator<<(std::ostream& (*pf)(std::ostream&))
-	{
-		stream << pf;
-		return *this;
-	}
-#endif
 };
 
 int main()
