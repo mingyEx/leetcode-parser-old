@@ -27,8 +27,10 @@ int main()
 https://stackoverflow.com/a/1389813/13792395
 
 ```cpp
-#define NDEBUG
-#define out MyDebug(std::cout)	//不然就得在```class solution``` 的ctor里调用了,鬼知道OJ有没有其他的Solution()，果然宏啥都能做...
+//这玩意不会降低运行效率，一个初始化而已。
+
+#define biu
+#define outp MyDebug(std::cout)
 
 class MyDebug
 {
@@ -36,7 +38,7 @@ class MyDebug
 public:
 	MyDebug(std::ostream& s) : stream(s) {}
 
-#ifdef NDEBUG
+#ifdef biu
 	template<typename T>
 	MyDebug& operator<<(T& item)
 	{
@@ -57,12 +59,18 @@ public:
 	}
 #else
 	template<typename T>
-	MyDebug& operator<<(T&)
+	MyDebug& operator<<(T&)	//卧槽，那个玩意是不是要往这里放一份的?
 	{
+		return *this;
+	}
+	MyDebug& operator<<(std::ostream& (*pf)(std::ostream&))
+	{
+		stream << pf;
 		return *this;
 	}
 #endif
 };
+
 int main()
 {
 	MyDebug md(cout);
