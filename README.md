@@ -9,3 +9,5 @@ mainly to deal with ```forked repositories are not currently searchable. ``` pro
 todo: support simulation problems like [this](https://leetcode.com/problems/dinner-plate-stacks/)
 
 pprint from [there](https://louisdx.github.io/cxx-prettyprint/)
+
+![Image text](https://github.com/mingy532/lc_debug/blob/main/aa.png)
