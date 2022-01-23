@@ -10,4 +10,4 @@ todo: support simulation problems like [this](https://leetcode.com/problems/dinn
 
 pprint from [there](https://louisdx.github.io/cxx-prettyprint/)
 
-![Image text](https://github.com/mingy532/lc_debug/blob/main/aa.png)
+![Image text](https://github.com/mingy532/lc_debug/blob/main/aa.png =100x200)
