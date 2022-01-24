@@ -9,17 +9,21 @@ debug leetcode testcase in local
 
 ### todo: 
 
-1.可以跑多个案例的测试框架
+- [ ] 可以跑多个案例的测试框架
 
-2.对做过的题，都手动写明白每个端口的传入到底是什么，不要用到还现猜。
+- [ ] 对做过的题，都手动写明白每个端口的传入到底是什么，不要用到还现猜。
 
-3.给pprint添加matrix的打印。
+- [ ] 给pprint添加matrix的打印。
 
-4.处理MyDebug输出多个内容时候endl不会听biu的问题。
+- [ ] 处理MyDebug输出多个内容时候endl不会听biu的问题。
 
-5.支持[模拟类问题](https://leetcode.com/problems/dinner-plate-stacks/)的调试
+- [ ] 实现类似 [caide](https://github.com/slycelote/caide)的功能。
+
+- [ ] 支持[模拟类问题](https://leetcode.com/problems/dinner-plate-stacks/)的调试
 
 ## Thanks
 [pprint](https://louisdx.github.io/cxx-prettyprint/)
 
 [leetcode-helper](https://github.com/luckystone60/leetcode-helper)
+
+[caide](https://github.com/slycelote/caide/issues/50)
