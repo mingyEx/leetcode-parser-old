@@ -1,11 +1,14 @@
 #ifndef H_PRETTY_PRINT
 #define H_PRETTY_PRINT
-#ifdef __GNUC__
-#include <bits/stdc++.h>
-#endif
-#ifdef _MSC_VER
-#include <__msvc_all_public_headers.hpp>
-#endif
+//#include <__msvc_all_public_headers.hpp> have problem in max/min ({...})
+
+#include<iostream>
+#include<vector>
+#include<string>
+#include<tuple>
+#include<unordered_set>
+#include<set>
+#include<valarray>
 
 namespace pretty_print
 {
