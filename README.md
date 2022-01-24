@@ -21,6 +21,8 @@ debug leetcode testcase in local
 
 - [ ] 支持[模拟类问题](https://leetcode.com/problems/dinner-plate-stacks/)的调试
 
+- [ ] 常用数据结构，板子，宏的收集和接口说明。
+
 ## Thanks
 [pprint](https://louisdx.github.io/cxx-prettyprint/)
 
