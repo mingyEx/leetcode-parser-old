@@ -10,7 +10,7 @@ debug leetcode testcase in local
 ### todo: 
 
 - [ ] 可以跑多个案例的测试框架
-- [ ] 能正确支持vector<string>和matrix<char>的初始化。
+- [ ] 能正确支持`vector<string>` 和 `matrix<char>`的初始化。
 
 - [ ] 对做过的题，都手动写明白每个端口的传入到底是什么，不要用到还现猜。
 
