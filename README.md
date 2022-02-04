@@ -21,9 +21,9 @@ debug leetcode testcase in local
 - [ ] 实现类似 [caide](https://github.com/slycelote/caide)的功能。
 
 - [ ] 支持[模拟类问题](https://leetcode.com/problems/dinner-plate-stacks/)的调试
+- [ ] 正确解析此问题下的输入 [1861. 旋转盒子](https://leetcode-cn.com/problems/rotating-the-box/)
 
 - [ ] 常用数据结构，板子，宏的收集和接口说明。
-
 ## Thanks
 [pprint](https://louisdx.github.io/cxx-prettyprint/)
 
