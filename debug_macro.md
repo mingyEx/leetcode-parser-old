@@ -85,3 +85,11 @@ int main()
 #endif
 ```
 IFDBG(cout << result << endl);
+
+
+#### update:
+别傻逼了，两行完事
+```cpp
+#define dbg(x) cerr << #x << " is " << x << endl;
+//#define dbg(x) ;
+```
