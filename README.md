@@ -24,6 +24,7 @@ debug leetcode testcase in local
 - [ ] 正确解析此问题下的输入 [1861. 旋转盒子](https://leetcode-cn.com/problems/rotating-the-box/)
 - [ ]哪天需要支持17的东西(variant等)了就看看[这个] (https://github.com/tcbrindle/pretty_print.hpp#optionals)
 - [ ] 常用数据结构，板子，宏的收集和接口说明。
+- [ ] 查看这个[dbg宏](https://github.com/sharkdp/dbg-macro )与pprint的重合度，以及它额外提供的功能是否必须 .
 ## Thanks
 [pprint](https://louisdx.github.io/cxx-prettyprint/)
 
