@@ -1,11 +1,4 @@
 # lc_debug
-debug leetcode testcase in local
-
-<img src="https://github.com/mingy532/lc_debug/blob/main/aa.png" height="240px"/>
-
-#### 用最笨的办法一点点打掉身体里旧有的反射，建立新的魔法回路,直到能开始享受它的乐趣。
-
-#### [为了部落](https://www.youtube.com/watch?v=omU-9pk12cU)
 
 ### todo: 
 
