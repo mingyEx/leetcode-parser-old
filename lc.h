@@ -35,7 +35,7 @@ namespace lc
 	std::vector<T> CreateVector(const std::string inputStr)
 	{
 		std::vector<T> ret;
-		const std::string pattern = R"(([+|-]?\w*\.?\w+),?)";
+		const std::string pattern = R"(([+|-]?\w*\.?[\w+|#|\.]),?)";
 		std::smatch match;
 
 		std::string log = inputStr;
