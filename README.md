@@ -2,18 +2,16 @@
 
 ### todo: 
 
-- [ ] 可以跑多个案例的测试框架
+- [x] 测试框架集成(debug print不方便，暂时放弃)
 
-- [ ] 对做过的题，都手动写明白每个端口的传入到底是什么，不要用到还现猜。
+- [ ] 理清常用板子的接口
 
-- [ ] 给pprint添加matrix的打印。
-
-- [ ] 处理MyDebug输出多个内容时候endl不会听biu的问题。
+- [ ] 给pprint添加matrix打印时自动分行的功能。
 
 - [ ] 实现类似 [caide](https://github.com/slycelote/caide)的功能。
 
 - [ ] 支持[模拟类问题](https://leetcode.com/problems/dinner-plate-stacks/)的调试
-- [ ] 正确解析此问题下的输入 [1861. 旋转盒子](https://leetcode-cn.com/problems/rotating-the-box/)
+
 - [ ]哪天需要支持17的东西(variant等)了就看看[这个] (https://github.com/tcbrindle/pretty_print.hpp#optionals)
 - [ ] 常用数据结构，板子，宏的收集和接口说明。
 - [ ] 查看这个[dbg宏](https://github.com/sharkdp/dbg-macro )与pprint的重合度，以及它额外提供的功能是否必须 .
@@ -22,7 +20,7 @@
 
 **update**
 
-对于以下输入，以`T==string`调用函数CreateMatrix()能够正确处理。
+对于[1861. 旋转盒子](https://leetcode-cn.com/problems/rotating-the-box/) 的输入，以`T==string`调用函数CreateMatrix()能够正确处理。
 ```bash
 [["carlos","defyun"],["carlos","defyun"],["carlos","defyun"],["carlos","defyun"]]
 [["A","B"],["C"],["B","C"],["D"]]
@@ -47,6 +45,7 @@ vector<vector<char>> rotateTheBox(vector<vector<char>>& box);
 需要解决的问题是如何使字符串带有符号的情况也可以被正常处理。
 [这里](https://github.com/KargathEx/lc_debug/blob/main/lc.h#L38)的正则表达式里的`w`只能处理[下面](https://www3.ntu.edu.sg/home/ehchua/programming/howto/Regexe.html) 的情况。
 > \w, \W: ANY ONE word/non-word character. For ASCII, word characters are [a-zA-Z0-9_]
+> 
 ## Thanks
 [pprint](https://louisdx.github.io/cxx-prettyprint/)
 
