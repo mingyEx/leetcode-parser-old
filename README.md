@@ -16,36 +16,6 @@
 - [ ] 常用数据结构，板子，宏的收集和接口说明。
 - [ ] 查看这个[dbg宏](https://github.com/sharkdp/dbg-macro )与pprint的重合度，以及它额外提供的功能是否必须 .
 
-- [ ]  `CreateVector()`对于符号的正确处理,优先级低，因为遇到`["#",".","#"]`作为输入的情况极少。
-
-**update**
-
-对于[1861. 旋转盒子](https://leetcode-cn.com/problems/rotating-the-box/) 的输入，以`T==string`调用函数CreateMatrix()能够正确处理。
-```bash
-[["carlos","defyun"],["carlos","defyun"],["carlos","defyun"],["carlos","defyun"]]
-[["A","B"],["C"],["B","C"],["D"]]
-```
-
-若以`T==char`调用，则输出分别为：
-```bash
-[[c, d], [c, d], [c, d], [c, d]]
-[[A, B], [C], [B, C], [D]]
-```
-
-以前遇到的具体问题是：
-对于输入 
-```[["#",".","#"]]```
-
-题目给出的函数签名为
-```cpp
-vector<vector<char>> rotateTheBox(vector<vector<char>>& box);
-```
-即需要char作为vector的类型来构造参数。
-以T==string调用`CreateMatrix()`会失败,换成 `char` 同理。
-需要解决的问题是如何使字符串带有符号的情况也可以被正常处理。
-[这里](https://github.com/KargathEx/lc_debug/blob/main/lc.h#L38)的正则表达式里的`w`只能处理[下面](https://www3.ntu.edu.sg/home/ehchua/programming/howto/Regexe.html) 的情况。
-> \w, \W: ANY ONE word/non-word character. For ASCII, word characters are [a-zA-Z0-9_]
-> 
 ## Thanks
 [pprint](https://louisdx.github.io/cxx-prettyprint/)
 
