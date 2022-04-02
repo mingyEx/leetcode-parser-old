@@ -12,12 +12,10 @@
 
 - [ ] 支持[模拟类问题](https://leetcode.com/problems/dinner-plate-stacks/)的调试
 
-- [ ] CreateTree()是以输入字符串作为层序遍历结果来构建Tree的，[652. 寻找重复的子树](https://leetcode-cn.com/classic/problems/find-duplicate-subtrees/description/)的例1显示 `不同的树其层序遍历结果可能相同` 所以根据lc的字符串来本地构建Tree有待改进，比如生成所有可能的tree给玩家自行挑选。
-
-update:我觉得不挂那个0就没问题了，既，对于给出的为null的节点，做检查，如果当前节点为null就不给它挂孩子。
-
 - [ ]哪天需要支持17的东西(variant等)了就看看[这个] (https://github.com/tcbrindle/pretty_print.hpp#optionals)
+- 
 - [ ] 常用数据结构，板子，宏的收集和接口说明。
+
 - [ ] 查看这个[dbg宏](https://github.com/sharkdp/dbg-macro )与pprint的重合度，以及它额外提供的功能是否必须 .
 
 ## Thanks
