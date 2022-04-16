@@ -20,6 +20,8 @@
 
 - [ ] 查看这个[dbg宏](https://github.com/sharkdp/dbg-macro )与pprint的重合度，以及它额外提供的功能是否必须 .
 
+额外功能不需要，行号和类型名字无用，过长的容器会被省略后面的，也是废物，抄一下色彩的部分就好。
+
 ## Thanks
 [pprint](https://louisdx.github.io/cxx-prettyprint/)
 
