@@ -10,6 +10,7 @@
 
 - [ ] 正确处理 `["a==b","b!=c","c==a"]` 来自[这里](https://leetcode-cn.com/problems/satisfiability-of-equality-equations/submissions/)
 
+- [ ] 支持多叉树的打印调试，例子:[1](https://leetcode-cn.com/problems/maximum-depth-of-n-ary-tree/) [2](https://leetcode-cn.com/problems/smallest-missing-genetic-value-in-each-subtree/) [3](https://leetcode-cn.com/problems/longest-path-with-different-adjacent-characters/)
 - [ ] 实现类似 [caide](https://github.com/slycelote/caide)的功能。
 
 - [ ] 支持[模拟类问题](https://leetcode.com/problems/dinner-plate-stacks/)的调试
@@ -18,7 +19,7 @@
 
 - [ ] 常用数据结构，板子，宏的收集和接口说明。
 
-- [ ] 查看这个[dbg宏](https://github.com/sharkdp/dbg-macro )与pprint的重合度，以及它额外提供的功能是否必须 .
+- [x] 查看这个[dbg宏](https://github.com/sharkdp/dbg-macro )与pprint的重合度，以及它额外提供的功能是否必须 .
 
 额外功能不需要，行号和类型名字无用，过长的容器会被省略后面的，也是废物，抄一下色彩的部分就好。
 
