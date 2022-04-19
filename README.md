@@ -1,4 +1,3 @@
-# lc_debug
 
 ### todo: 
 
