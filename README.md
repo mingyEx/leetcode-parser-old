@@ -12,7 +12,7 @@
 - [ ] 支持多叉树的打印调试，例子:[1](https://leetcode-cn.com/problems/maximum-depth-of-n-ary-tree/) [2](https://leetcode-cn.com/problems/smallest-missing-genetic-value-in-each-subtree/) [3](https://leetcode-cn.com/problems/longest-path-with-different-adjacent-characters/)
 - [ ] 实现类似 [caide](https://github.com/slycelote/caide)的功能。
 
-- [ ] 支持[模拟类问题](https://leetcode.com/problems/dinner-plate-stacks/)的调试
+- [ ] 支持[模拟类问题](https://leetcode.com/problems/dinner-plate-stacks/)的[调试](https://github.com/slycelote/caide/issues/50)
 
 - [ ] 哪天需要支持17的东西(variant等)了就看看[这个] (https://github.com/tcbrindle/pretty_print.hpp#optionals)
 
