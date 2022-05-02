@@ -2,6 +2,7 @@
 ### todo: 
 
 - [ ] 测试框架集成()
+    - [ ] 如何在从文件读入的情况下，使用gtest添加新案例，尤其是对于`vector<string>` 和 `vector<vector<int>>`
 
 - [ ] 正确处理 `["a==b","b!=c","c==a"]` 来自[这里](https://leetcode-cn.com/problems/satisfiability-of-equality-equations/submissions/)
 
