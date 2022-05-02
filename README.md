@@ -1,7 +1,7 @@
 
 ### todo: 
 
-- [ ] 测试框架集成()
+- [ ] 测试框架集成，保证在为新的`testcase`修改代码时不会影响旧的`testcase`,就像`codewars`那样
     - [ ] 如何在从文件读入的情况下，使用gtest添加新案例，尤其是对于`vector<string>` 和 `vector<vector<int>>`
 
 - [ ] 正确处理 `["a==b","b!=c","c==a"]` 来自[这里](https://leetcode-cn.com/problems/satisfiability-of-equality-equations/submissions/)
