@@ -20,6 +20,9 @@
 
 其他功能如行号和类型名字无用，过长的容器只会显示前几个，不符合debug需要。
 
+## appendix
+lintcode用户需将数组的{}替换为[],树的`#`替换为`null`
+
 ## Thanks
 [pprint](https://louisdx.github.io/cxx-prettyprint/)
 
