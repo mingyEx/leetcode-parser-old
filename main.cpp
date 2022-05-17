@@ -1,14 +1,8 @@
-//#define _CRT_SECURE_NO_WARNINGS
-//#define _USE_MATH_DEFINES
-//#define CATCH_CONFIG_MAIN  //so we don't need main
-//#define PR(x) cout<<#x "="<<x<<"\n";
-
-#include "pprint.h"
-#include "lc.h"
+#define _CRT_SECURE_NO_WARNINGS
 #include<vector>
 #include<string>
 #include<map>
-#include<algorithm>
+#include<algorithm>	
 #include <unordered_map>
 #include<iostream>
 #include<bitset>
@@ -17,60 +11,63 @@
 #include<numeric>
 #include<queue>
 #include<functional>
+#include<iomanip>
+#include<variant>
+#include<cassert>
+#include<memory>
+#include<typeinfo>
+#include <gtest/gtest.h>
+#include "pprint.h"
+#include "lc.h"
+#include"So.h"
+std::ifstream file("in.txt");
 using namespace std;
 using namespace lc;
 
-#define biu
-#define dout MyDebug(std::cout)
-class MyDebug
+//multiple test cases
+auto get(ifstream& file)
 {
-	std::ostream& stream;
-public:
-	MyDebug(std::ostream& s) : stream(s) {}
-
-#ifdef biu
-	template<typename T>
-	MyDebug& operator<<(T& item)
-	{
-		stream << item;
-		return *this;
-	}
-#else
-	template<typename T>
-	MyDebug& operator<<(T&)	//卧槽，那个玩意是不是要往这里放一份的?
-	{
-		return *this;
-	}
-#endif
-	MyDebug& operator<<(std::ostream& (*pf)(std::ostream&))
-	{
-		stream << pf;
-		return *this;
-	}
-	template<typename R, typename P>
-	MyDebug& operator<<(R& (*pf)(P&))	//<== 他是干嘛的
-	{
-		std::cout << "never called!";
-		stream << pf;
-		return *this;
-	}
-};
-
-typedef vector<int> vi;
-typedef vector<vi> vvi;
-typedef pair < int, int > ii;
-#define all(c) c.begin(), c.end()
-
-int main()
-{
-	std::ifstream file("file.txt");
-	std::string temp;
-	std::string temp2;
-	std::getline(file, temp);
-	//std::getline(file, temp2);
-	auto t1 = CreateVector<int>(temp);
-	//auto t2 = CreateMatrix<int>(temp2);
-	cout << Solution().some_func(t1, 8);
-
-	return 0;
+  std::string input1;
+  std::getline(file, input1);
+  Tree* t1=new Tree(input1); //change it by need
+  return t1;
 }
+//按需复制多次
+TEST(TmpAddTest, c1)
+{
+  auto t1 = get(file);
+  t1->print();
+  ASSERT_EQ(1, 2 - 1);
+  EXPECT_TRUE(true);
+}
+//按需复制多次
+TEST(TmpAddTest, c2)
+{
+  auto t1 = get(file);
+  t1->print();
+  ASSERT_EQ(1, 2 - 1);
+  EXPECT_TRUE(true);
+}
+//按需复制多次
+TEST(TmpAddTest, c3)
+{
+  auto t1 = get(file);
+  t1->print();
+  ASSERT_EQ(1, 2 - 1);
+  EXPECT_TRUE(true);
+}
+int main(int argc, char** argv)
+{
+  ::testing::InitGoogleTest(&argc, argv);
+  return RUN_ALL_TESTS();
+}
+
+//single testcase
+//int main()
+//{
+//  std::ifstream file("in.txt");
+//  std::string input1;
+//  std::getline(file, input1);
+//  auto t1 =Vec<int>(input1);
+//  cout << Solution().func_name() << endl;
+//}
