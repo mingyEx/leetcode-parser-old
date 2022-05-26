@@ -24,3 +24,5 @@ lintcode用户需将数组的{}替换为[],树的`#`替换为`null`
 [leetcode-helper](https://github.com/luckystone60/leetcode-helper)
 
 [caide](https://github.com/slycelote/caide/issues/50)
+
+[boost.Describe](https://www.boost.org/doc/libs/develop/libs/describe/doc/html/describe.html#example_json_rpc)
