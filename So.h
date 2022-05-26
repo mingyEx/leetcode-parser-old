@@ -17,7 +17,6 @@ template<class T> using pqg = priority_queue<T, vector<T>, greater<T>>;
 #define ed cout << endl;
 //#define  sw cout<<res<<endl<<l<<" "<<r<<endl<<endl; //滑动窗口debug用。
 //#define rt  return res;
-#endif
 template<class C1, class C2, class R, class... A, std::size_t... I>
 boost::json::value
 call_impl_(C1& c1, R(C2::* pmf)(A...), boost::json::array const& args,
@@ -60,9 +59,11 @@ call(C& c, boost::string_view method, boost::json::value const& args)
   }
   return result;
 }
+#endif
+
 
 class Solution
 {
   //...
-    BOOST_DESCRIBE_CLASS(Solution, (), (member_func1, member_func2, member_func3), (), ());
+    BOOST_DESCRIBE_CLASS(Solution, (), (member_func1, member_func2, member_func3), (), ());//Comment this line when submitting code
     //参数依次为:类名，(基类1，基类2..基类n),(public成员函数与成员变量，以书写顺序)，(同前，Protected),(同前,private))
