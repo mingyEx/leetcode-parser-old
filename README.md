@@ -9,7 +9,7 @@
 
 - [ ] 实现类似 [caide](https://github.com/slycelote/caide)里 ______ 的功能。
 
-- [ ] 支持[模拟类问题](https://leetcode.com/problems/dinner-plate-stacks/)的[调试](https://github.com/slycelote/caide/issues/50)
+- [x] 支持[模拟类问题](https://leetcode.com/problems/dinner-plate-stacks/)的[调试](https://github.com/slycelote/caide/issues/50)
 
 - [ ] 整理常用算法和宏的接口说明。
 
