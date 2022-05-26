@@ -11,9 +11,9 @@
 
 - [x] 支持[模拟类问题](https://leetcode.com/problems/dinner-plate-stacks/)的调试。   
       done:  
-      [1993. 树上的操作](https://leetcode.cn/problems/operations-on-tree/)    
+      参数为单值类型: [__1993. 树上的操作__](https://leetcode.cn/problems/operations-on-tree/)    
       todo:  
-      [1172. 餐盘栈](https://leetcode.cn/problems/dinner-plate-stacks/)
+      参数可能为空: [__1172. 餐盘栈__](https://leetcode.cn/problems/dinner-plate-stacks/)
 - [ ] 整理常用算法和宏的接口说明。
 
 - [ ] 从[dbg](https://github.com/sharkdp/dbg-macro )中添加彩色输出功能。(行号有用吗?)。
