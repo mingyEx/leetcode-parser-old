@@ -40,7 +40,7 @@ call_impl(C1& c1, R(C2::* pmf)(A...), boost::json::array const& args)
 }
 template<class C>
 boost::json::value
-call(C& c, boost::string_view method, boost::json::value const& args)
+call(C& c, boost::string_view method, boost::json::value const& args=boost::json::array{})
 {
   using Fd = boost::describe::describe_members<C,
     boost::describe::mod_public | boost::describe::mod_function>;
