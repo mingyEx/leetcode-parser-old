@@ -1,6 +1,8 @@
 ### todo: 
 
-- [ ] 正确处理 `["a==b","b!=c","c==a"]` 来自[这里](https://leetcode-cn.com/problems/satisfiability-of-equality-equations/submissions/)
+- [ ] 正确处理带标点符号的string，如 `["a==b","b!=c","c==a"]` 来自[这里](https://leetcode-cn.com/problems/satisfiability-of-equality-equations/)
+
+- [ ] 正确处理带空格的string，如 `["Hello userTwooo","Hi userThree","Wonderful day Alice","Nice day userThree"]` 来自[这里](https://leetcode.cn/contest/biweekly-contest-79/problems/sender-with-largest-word-count/)
 
 - [ ] 正确处理符号如 `[[">>v","v^<","<><"]]` ，来自[ 2. 信物传送 ](https://leetcode.cn/contest/season/2022-spring/problems/6UEx57/)
 
