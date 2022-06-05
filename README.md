@@ -6,6 +6,8 @@
 
 - [ ] 正确处理符号如 `[[">>v","v^<","<><"]]` ，来自[ 2. 信物传送 ](https://leetcode.cn/contest/season/2022-spring/problems/6UEx57/)
 
+- [ ] 正确处理包含不同类型的二维数组如 `[[], ["leetcode"], [4], ["practice"], [3], [8], [10], [2], [6]]` ，来自 [ 6093. 设计一个文本编辑器 ](https://leetcode.cn/contest/weekly-contest-296/problems/design-a-text-editor/)
+
 - [ ] 支持多叉树的打印调试，例子:[1](https://leetcode-cn.com/problems/maximum-depth-of-n-ary-tree/) [2](https://leetcode-cn.com/problems/smallest-missing-genetic-value-in-each-subtree/) [3](https://leetcode-cn.com/problems/longest-path-with-different-adjacent-characters/)
 
 - [ ] 实现类似 [caide](https://github.com/slycelote/caide)里 ______ 的功能。
