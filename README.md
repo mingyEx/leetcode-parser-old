@@ -1,3 +1,9 @@
+### intent 
+  1.网速较差的情况下，本地debug比online快  
+  2.本地debug可以利用IDE更全面的调试功能，比如查看所有对象的值，条件断点，查看调用栈(对于设计类问题)等。  
+  3.代码补全。  
+
+
 ### todo: 
 
 - [ ] 正确处理带标点符号的string，如 `["a==b","b!=c","c==a"]` 来自[这里](https://leetcode-cn.com/problems/satisfiability-of-equality-equations/)
