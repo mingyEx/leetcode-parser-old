@@ -5,7 +5,9 @@
 
 
 ### todo: 
-
+- [ ] 使用 `__func__` 来方便查看模拟类问题的调用栈。
+- [ ] 使用全局变量 `recur_depth`来查看递归深度。 
+- [ ] 输出为红色以帮助区分调试输出和常规输出。
 - [ ] 正确处理带标点符号的string，如 `["a==b","b!=c","c==a"]` 来自[这里](https://leetcode-cn.com/problems/satisfiability-of-equality-equations/)
 
 - [ ] 正确处理带空格的string，如 `["Hello userTwooo","Hi userThree","Wonderful day Alice","Nice day userThree"]` 来自[这里](https://leetcode.cn/contest/biweekly-contest-79/problems/sender-with-largest-word-count/)
