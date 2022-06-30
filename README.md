@@ -30,7 +30,7 @@
 - [ ] 从[dbg](https://github.com/sharkdp/dbg-macro )中添加彩色输出功能。(行号有用吗?)。
 
 ## appendix
-`lintcode`用户需将数组的`{}`替换为`[]`,树的`#`替换为`null`
+`lintcode`用户需将数组的`{}`替换为`[]`,树的`#`替换为`null`  
 gcc/clang用户暂时先使用pprint的[原始版本](https://github.com/louisdx/cxx-prettyprint/blob/master/prettyprint.hpp),以后吃饱了撑的再搞懂为啥我修改了的(区别于正常的那个)版本不能用。
 ## Thanks
 [pprint](https://louisdx.github.io/cxx-prettyprint/)
