@@ -32,6 +32,11 @@
 ## appendix
 `lintcode`用户需将数组的`{}`替换为`[]`,树的`#`替换为`null`  
 gcc/clang用户暂时先使用pprint的[原始版本](https://github.com/louisdx/cxx-prettyprint/blob/master/prettyprint.hpp),以后吃饱了撑的再搞懂为啥我修改了的(区别于正常的那个)版本不能用。
+### 待了解
+[gdb调试](https://stackoverflow.com/a/42896336/13792395)  
+[gccfilter](http://www.mixtion.org/gccfilter/) 解决蛋逼的报错。  
+[___]一个想不起来了的Error list 类似物，可以用在屎vim里,这样就能在买不起clion的情况下在linux下感受有IDE的幻觉。  
+
 ## Thanks
 [pprint](https://louisdx.github.io/cxx-prettyprint/)
 
