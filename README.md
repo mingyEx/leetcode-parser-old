@@ -2,6 +2,7 @@
   1.网速较差的情况下，本地debug比online快  
   2.本地debug可以利用IDE更全面的调试功能，比如查看所有对象的值，条件断点，查看调用栈(对于设计类问题)等。  
   3.代码补全。  
+  4.对于模拟类问题，本工具只用于查找`运行时错误`，`逻辑错误`要靠观察输出来排错，比如[900. RLE 迭代器](https://leetcode.cn/submissions/detail/332739590/)的`deleted = cur;`位置太低，`if (it == cnt.end())return -1;`导致提前退出的话，状态deleted的值没有得到及时更新。
 
 
 ### todo: 
