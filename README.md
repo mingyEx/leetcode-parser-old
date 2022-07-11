@@ -7,7 +7,7 @@
 
 ### todo: 
 - [ ] 使用 [`__func__`](https://stackoverflow.com/a/4384825/13792395) 来查看模拟类问题的调用栈。
-- [ ] 使用通用宏对任意函数打印所有参数，以便于在弹出的窗口中查看para来debug，但是[这个](https://stackoverflow.com/a/24956733/13792395)call似乎只能套在Solution().call(func,t1,t2,3里,难得找到的写`&&` `...`的机会...
+- [ ] 使用通用宏对任意函数打印所有参数，以便于在弹出的窗口中查看para来debug，但是[这个](https://stackoverflow.com/a/24956733/13792395)call似乎只能套在`Solution().call(func,t1,t2,3`里,不便于开关(虽然不影响提交)，~~难得找到的写`&&` `...`的机会~~
 
 - [ ] 使用全局变量 `recur_depth`来查看递归深度。 
 - [ ] 输出为红色以帮助区分调试输出和常规输出。
