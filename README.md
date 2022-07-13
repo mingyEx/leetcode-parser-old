@@ -5,12 +5,11 @@
   3.对于模拟类问题，本工具只用于查找`运行时错误`，`逻辑错误`要靠观察输出来排错，比如[900. RLE 迭代器](https://leetcode.cn/submissions/detail/332739590/)的`deleted = cur;`位置太低，`if (it == cnt.end())return -1;`导致提前退出的话，状态deleted的值没有得到及时更新。
 
 
-### todo: 
+### todo
 - [ ] 使用 [`__func__`](https://stackoverflow.com/a/4384825/13792395) 来查看模拟类问题的调用栈。
 - [ ] 使用宏对任意函数打印所有parameters ，以便于在弹出的窗口中debug时不需要看input，但是[这个](https://stackoverflow.com/a/24956733/13792395)call似乎只能套在`Solution().call(func,t1,t2,3`里,不便于开关(虽然不影响提交)，~~难得找到的写`&&` `...`的机会~~
 
 - [ ] 使用全局变量 `recur_depth`来查看递归深度。 
-- [ ] 输出为红色以帮助区分调试输出和常规输出。
 - [ ] 正确处理带标点符号的string，如 `["a==b","b!=c","c==a"]` 来自[这里](https://leetcode-cn.com/problems/satisfiability-of-equality-equations/)
 
 - [ ] 正确处理带空格的string，如 `["Hello userTwooo","Hi userThree","Wonderful day Alice","Nice day userThree"]` 来自[这里](https://leetcode.cn/contest/biweekly-contest-79/problems/sender-with-largest-word-count/)
