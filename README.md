@@ -24,9 +24,9 @@ from  [2296. Design a Text Editor](https://leetcode.com/problems/design-a-text-e
 #### print more data structures
 - [ ] n-ary-tree  
 example:  
-[maximum depth of n-ary tree](https://leetcode-cn.com/problems/maximum-depth-of-n-ary-tree/)    
-[smallest missing genetic value in each subtree](https://leetcode-cn.com/problems/smallest-missing-genetic-value-in-each-subtree/)   
-[longest path with different adjacent characters](https://leetcode-cn.com/problems/longest-path-with-different-adjacent-characters/)  
+[559. Maximum Depth of N-ary Tree](https://leetcode.com/problems/maximum-depth-of-n-ary-tree/)    
+[2003. Smallest Missing Genetic Value in Each Subtree](https://leetcode.com/problems/smallest-missing-genetic-value-in-each-subtree/)   
+[2246. Longest Path With Different Adjacent Characters](https://leetcode.com/problems/longest-path-with-different-adjacent-characters/)  
   
 ## appendix
 `lintcode` users need to replace `{}` with `[]` and `#` with `null`
