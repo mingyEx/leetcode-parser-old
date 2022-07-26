@@ -22,12 +22,12 @@ from [2. 信物传送 ](https://leetcode.cn/contest/season/2022-spring/problems/
 from  [2296. Design a Text Editor](https://leetcode.com/problems/design-a-text-editor/)
 
 #### print more data structures
-- [ ] n-ary-tree，
-example:
-[maximum depth of n-ary tree](https://leetcode-cn.com/problems/maximum-depth-of-n-ary-tree/)  
-[smallest missing genetic value in each subtree](https://leetcode-cn.com/problems/smallest-missing-genetic-value-in-each-subtree/) 
-[longest path with different adjacent characters](https://leetcode-cn.com/problems/longest-path-with-different-adjacent-characters/)
-
+- [ ] n-ary-tree  
+example:  
+[maximum depth of n-ary tree](https://leetcode-cn.com/problems/maximum-depth-of-n-ary-tree/)    
+[smallest missing genetic value in each subtree](https://leetcode-cn.com/problems/smallest-missing-genetic-value-in-each-subtree/)   
+[longest path with different adjacent characters](https://leetcode-cn.com/problems/longest-path-with-different-adjacent-characters/)  
+  
 ## appendix
 `lintcode` users need to replace `{}` with `[]` and `#` with `null`
 gcc/clang users should use pprint's [original version](https://github.com/louisdx/cxx-prettyprint/blob/master/prettyprint.hpp)
