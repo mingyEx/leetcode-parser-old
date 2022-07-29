@@ -9,6 +9,7 @@ todo...
 todo...
 
 ### Todo
+如果函数返回TreeNode* ,将无法打印，因为print()是Tree的member func. 待改进。
 
 #### Support for more complex input parameter types
 
