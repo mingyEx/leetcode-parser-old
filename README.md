@@ -9,7 +9,11 @@ todo...
 todo...
 
 ### Todo
-如果函数返回TreeNode* ,将无法打印，因为print()是Tree的member func. 待改进。
+如果函数返回TreeNode* ,将无法打印，因为print()是Tree的member func. 待改进。  
+
+grid类问题，通过自定义数据结构的配置文件，用IDE自带的子窗口来显示每一步的变化.  
+一些可能用得上的链接:  
+[x-jun](https://www.cnblogs.com/X-Jun/p/8040916.html) [vczh](http://www.cppblog.com/vczh/archive/2013/03/21/198665.html)
 
 #### Support for more complex input parameter types
 
