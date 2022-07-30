@@ -34,6 +34,7 @@ namespace lc
     TreeNode* left;
     TreeNode* right;
     TreeNode(int x = 0) : val(x), left(nullptr), right(nullptr) {}
+    Tree(TreeNode* p) { root = p; }
     ~TreeNode() {
       if (left) delete left;
       if (right) delete right;
