@@ -86,6 +86,7 @@ namespace lc
   public:
     TreeNode* root;
     Tree(const std::string& input);
+    Tree(TreeNode* p) { root = p; } 
     ~Tree();
     void print();
   };
