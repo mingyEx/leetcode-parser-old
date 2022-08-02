@@ -14,6 +14,7 @@ grid类问题，通过自定义数据结构的配置文件，用IDE自带的子�
 一些可能用得上的链接:  
 [x-jun](https://www.cnblogs.com/X-Jun/p/8040916.html) [vczh](http://www.cppblog.com/vczh/archive/2013/03/21/198665.html)
 
+函数内部使用[Tree(p)](https://github.com/KargathEx/LC-parser/blob/main/lc.h#L89)来构造临时值，用来调用print(),会导致退出函数时候触发析构，使得main()里对p再调用print()而完蛋,蹲一个更好的做法。
 #### Support for more complex input parameter types
 
 - [ ] string with punctuation，like `["a==b","b!=c","c==a"]`   
