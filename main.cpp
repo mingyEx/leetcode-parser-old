@@ -24,6 +24,18 @@ using namespace std;
 using namespace lc;
 
 
+auto strToChar(vector<vector<string>> t1)
+{
+  vector<vector<char>> t;
+  for (auto i : t1)
+  {
+    t.push_back(vector<char>());
+    for (auto j : i)
+      t.back().push_back(j[0]);
+  }
+  return t;
+}
+
 int main()
 {
   std::ifstream file("in.txt");
