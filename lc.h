@@ -44,7 +44,7 @@ namespace lc
   std::vector<T> Vec(const std::string inputStr)
   {
     std::vector<T> ret;
-    const std::string pattern = R"(([+|-]?\w*\.?[\w+|#|\.]),?)";
+    const std::string pattern = R"(([+|-]?\w*\.?[\w+|#|(|)|\.]),?)";
     std::smatch match;
     std::string log = inputStr;
     while (regex_search(log, match, (std::regex)pattern)) {
