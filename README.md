@@ -27,7 +27,7 @@ from  [2296. Design a Text Editor](https://leetcode.com/problems/design-a-text-e
   
 ## appendix
 `lintcode` users need to replace `{}` with `[]` and `#` with `null`  
-gcc/clang users should use pprint's [original version](https://github.com/louisdx/cxx-prettyprint/blob/master/prettyprint.hpp)
+gcc/clang/visual studio2022 users should use pprint's [original version](https://github.com/louisdx/cxx-prettyprint/blob/master/prettyprint.hpp)
 
 ## Thanks
 [pprint](https://louisdx.github.io/cxx-prettyprint/)  
