@@ -85,3 +85,11 @@ void lc::Tree::print()
   std::cout << root->val << '\n';
   if (root->left) print_Impl(root->left, true, " ");
 }
+void lc::print(TreeNode* p)
+{
+    lc::Tree(p).print();
+}
+void lc::print(ListNode* p)
+{
+  List(p).print();
+}
