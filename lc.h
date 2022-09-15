@@ -16,15 +16,24 @@ namespace lc
     int val;
     ListNode* next;
     ListNode(int x) : val(x), next(nullptr) {}
-    ListNode(int x, ListNode* next_) : val(x), next{ next_ }  {}
+    ListNode(int x, ListNode* next_) : val(x), next{ next_ } {}
   };
   class List
   {
-  public:
     ListNode* head;
+    ListNode* copy(ListNode* p)
+    {
+      if (!p)return nullptr;
+      ListNode* r = new ListNode(p->val);
+      r->next = copy(p->next);
+      return r;
+    }
+  public:
     List(const std::string& inputStr);
+    List(ListNode* p) { head = copy(p); };
     ~List();
     void print();
+    auto get() { return head; }
   };
 
   const int32_t TREE_NODE_BOUNDNARY = INT_MIN + 1; // replace null
@@ -34,7 +43,6 @@ namespace lc
     TreeNode* left;
     TreeNode* right;
     TreeNode(int x = 0) : val(x), left(nullptr), right(nullptr) {}
-    Tree(TreeNode* p) { root = p; }
     ~TreeNode() {
       if (left) delete left;
       if (right) delete right;
@@ -61,7 +69,7 @@ namespace lc
     return ret;
   }
   template<typename T>
-  std::vector<std::vector<T>> Vec2d(const std::string inputStr)
+  std::vector<std::vector<T>> Vec2(const std::string inputStr)
   {
     std::vector<std::vector<T>> ret;
     const std::string pattern = R"((\[[^\[\]]*\]))";
@@ -83,12 +91,22 @@ namespace lc
   {
   private:
     void print_Impl(TreeNode* n, bool left, std::string const& indent);
+    TreeNode* copyTree(TreeNode* p)
+    {
+      if (!p)return nullptr;
+      auto r = new TreeNode(p->val);
+      r->left = copyTree(p->left);
+      r->right = copyTree(p->right);
+      return r;
+    }
   public:
     TreeNode* root;
     Tree(const std::string& input);
-    Tree(TreeNode* p) { root = p; } 
+    Tree(TreeNode* p) { root = copyTree(p); }
     ~Tree();
     void print();
   };
+  void print(TreeNode* p);
+  void print(ListNode* p);
 }
 #endif
