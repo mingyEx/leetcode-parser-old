@@ -6,9 +6,9 @@ Provides `autocompletion` and `debugger` for leetcode beginners
 1. Supported data types: `int`, `double`, `char`, `string` in the form of `array` or `two-dimensional array`  
 2. Support for creating data structures: `array` or `two-dimensional array`,`tree`, `list`,  (you won't need graph)  
 3. Support for printing custom data structures (like `list` and `tree` )and common containers to help you debug,like `vector`,`unordered_map`,`map`,`set`,etc.
-
+4. Supports debugging of [Design problems](https://leetcode.com/tag/design/), you need to fill in `BOOST_DESCRIBE_CLASS`
 ### dependencies 
-Does not require any third-party library
+[boost-describe](https://www.boost.org/doc/libs/develop/libs/describe/) only if you need to debug [design problems](https://leetcode.com/tag/design/)
 
 ### Support for more complex input parameter types
 ###### [By modifying the regular expression](https://github.com/KargathEx/LC-parser/blob/main/lc.h#L55)
