@@ -4,7 +4,7 @@ Provides `autocompletion` and `debugger` for leetcode beginners
 
 ### Feature
 1. Supported data types: `int`, `double`, `char`, `string` in the form of `array` or `two-dimensional array`  
-2. Support for creating data structures: `array` or `two-dimensional array`,`tree`, `list`,  (you won't need graph)  
+2. Support for creating data structures: `array` or `two-dimensional array`,`tree`, `list`,  (you may want  [graph editor](https://csacademy.com/app/graph_editor/))  
 3. Support for printing custom data structures (like `list` and `tree` )and common containers to help you debug,like `vector`,`unordered_map`,`map`,`set`,etc.
 4. Supports debugging of [Design problems](https://leetcode.com/tag/design/), you need to fill in `BOOST_DESCRIBE_CLASS`
 ### dependencies 
