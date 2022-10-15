@@ -1,4 +1,3 @@
-//#define design
 #include<vector>
 #include<string>
 #include<map>
@@ -47,32 +46,6 @@ boost::json::value
 call_impl(C1& c1, R(C2::* pmf)(A...), boost::json::array const& args)
 {
   if (args.size() != sizeof...(A))
-    throw std::invalid_argument("Invalid number of arguments");
-  return call_impl_(c1, pmf, args, std::index_sequence_for<A...>());
-}
-template<class C>
-boost::json::value call(C& c, boost::string_view method, boost::json::value const& args = boost::json::array{})
-{
-  using Fd = boost::describe::describe_members<C,
-    boost::describe::mod_public | boost::describe::mod_function>;
-  bool found = false;
-  boost::json::value result;
-  boost::mp11::mp_for_each<Fd>([&](auto D) {
-    if (!found && method == D.name)
-    {
-      result = call_impl(c, D.pointer, args.as_array());
-      found = true;
-    }
-    });
-  if (!found)
-  {
-    throw std::invalid_argument("Invalid method name");
-  }
-  return result;
-}
-//    BOOST_DESCRIBE_CLASS(Solution, (), (member_func1, member_func2, member_func3), (), ());
-#endif
-
 #ifdef func
 
 template<typename T>set<typename T::value_type> to_set(T t) { return set(t.begin(), t.end()); }
