@@ -17,8 +17,9 @@ Provides `autocompletion` and `debugger` for leetcode beginners
 from [990. Satisfiability of Equality Equations](https://leetcode.com/problems/satisfiability-of-equality-equations/)
 - [ ] string with spaces，like `["Hello userTwooo","Hi userThree","Wonderful day Alice","Nice day userThree"]`   
 from [2284. Sender With Largest Word Count](https://leetcode.com/problems/sender-with-largest-word-count/)
-- [ ] symbols such as `[[">>v","v^<","<><"]]`   
-from [2. 信物传送 ](https://leetcode.cn/contest/season/2022-spring/problems/6UEx57/)
+- [ ] symbols such as `[[">>v","v^<","<><"]]` from [2. 信物传送 ](https://leetcode.cn/contest/season/2022-spring/problems/6UEx57/)
+- [ ] symbols such as `["...","L.L","RR.","L.R"]` from [光线反射](https://leetcode.cn/contest/tianchi2022/problems/8KXuKl/)  
+
 - [ ] two-dimensional vector containing more than one types,for example `[[], ["leetcode"], [4], ["practice"], [3], [8], [10], [2], [6]]`   
 from  [2296. Design a Text Editor](https://leetcode.com/problems/design-a-text-editor/)
 
