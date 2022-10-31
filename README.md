@@ -31,7 +31,6 @@ from  [2296. Design a Text Editor](https://leetcode.com/problems/design-a-text-e
   
 ### note
 `lintcode`/`codewars` users need to replace `{}` with `[]` and `#` with `null`  
-please use pprint's [original version](https://github.com/louisdx/cxx-prettyprint/blob/master/prettyprint.hpp)
 
 ### Any feature improvement suggestions are welcome
 
