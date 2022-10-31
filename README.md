@@ -31,7 +31,7 @@ from  [2296. Design a Text Editor](https://leetcode.com/problems/design-a-text-e
   
 ### note
 `lintcode`/`codewars` users need to replace `{}` with `[]` and `#` with `null`  
-
+<!-- fmt对map的打印很丑，不用它 -->
 ### Any feature improvement suggestions are welcome
 
 ### Thanks
