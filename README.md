@@ -1,34 +1,33 @@
 ### Description
 
-Provides `autocompletion` and `debugger` for leetcode beginners 
+Helps you debug `leetcode` problems
 
 ### Feature
-1. Supported data types: `int`, `double`, `char`, `string` in the form of `array` or `two-dimensional array`  
-2. Support for creating data structures: `array` or `two-dimensional array`,`tree`, `list`,  (you may want  [graph editor](https://csacademy.com/app/graph_editor/))  
-3. Support for printing custom data structures (like `list` and `tree` )and common containers to help you debug,like `vector`,`unordered_map`,`map`,`set`,etc.
-4. Supports debugging of [Design problems](https://leetcode.com/tag/design/), you need to fill in `BOOST_DESCRIBE_CLASS`
+1. creating data structures such as  `array`,`tree`, `list`.  
+2. Output all commonly used containers.
+3. Debug  [Design problems](https://leetcode.com/tag/design/).
+
 ### dependencies 
-[boost-describe](https://www.boost.org/doc/libs/develop/libs/describe/) only if you need to debug [design problems](https://leetcode.com/tag/design/)
+[boost-describe](https://www.boost.org/doc/libs/develop/libs/describe/) when debug [design problems](https://leetcode.com/tag/design/)
 
-### Support for more complex input parameter types
-###### [By modifying the regular expression](https://github.com/KargathEx/LC-parser/blob/main/lc.h#L55)
+### Todo :   
 
-- [ ] string with punctuation，like `["a==b","b!=c","c==a"]`   
-from [990. Satisfiability of Equality Equations](https://leetcode.com/problems/satisfiability-of-equality-equations/)
-- [ ] string with spaces，like `["Hello userTwooo","Hi userThree","Wonderful day Alice","Nice day userThree"]`   
-from [2284. Sender With Largest Word Count](https://leetcode.com/problems/sender-with-largest-word-count/)
-- [ ] symbols such as `[[">>v","v^<","<><"]]` from [2. 信物传送 ](https://leetcode.cn/contest/season/2022-spring/problems/6UEx57/)
-- [ ] symbols such as `["...","L.L","RR.","L.R"]` from [光线反射](https://leetcode.cn/contest/tianchi2022/problems/8KXuKl/)  
+#### 1.Support for more complex input parameter types By modifying [the regular expression](https://github.com/KargathEx/LC-parser/blob/main/lc.h#L55)
 
-- [ ] two-dimensional vector containing more than one types,for example `[[], ["leetcode"], [4], ["practice"], [3], [8], [10], [2], [6]]`   
-from  [2296. Design a Text Editor](https://leetcode.com/problems/design-a-text-editor/)
+- [ ] string with punctuation，like `["a==b","b!=c","c==a"]`in [990](https://leetcode.com/problems/satisfiability-of-equality-equations/)
+- [ ] string with spaces，like `["Hello userTwooo","Hi userThree","Wonderful day Alice","Nice day userThree"]` in [2284](https://leetcode.com/problems/sender-with-largest-word-count/)
+- [ ] symbols such as `[[">>v","v^<","<><"]]` in [2. 信物传送 ](https://leetcode.cn/contest/season/2022-spring/problems/6UEx57/)
+- [ ] symbols such as `["...","L.L","RR.","L.R"]` in [光线反射](https://leetcode.cn/contest/tianchi2022/problems/8KXuKl/)  
 
-#### print more data structures
+- [ ] two-dimensional vector containing more than one types,for example `[[], ["leetcode"], [4], ["practice"], [3], [8], [10], [2], [6]]` in  [2296](https://leetcode.com/problems/design-a-text-editor/)
+
+I don't know how to modify the regex to correctly parse such strings, eager for your suggestions
+
+#### 2.print more data structures
 - [ ] n-ary-tree   
   [559. Maximum Depth of N-ary Tree](https://leetcode.com/problems/maximum-depth-of-n-ary-tree/)    
   [2003. Smallest Missing Genetic Value in Each Subtree](https://leetcode.com/problems/smallest-missing-genetic-value-in-each-subtree/)   
   [2246. Longest Path With Different Adjacent Characters](https://leetcode.com/problems/longest-path-with-different-adjacent-characters/)  
-  
 ### note
 `lintcode`/`codewars` users need to replace `{}` with `[]` and `#` with `null`  
 <!-- fmt对map的打印很丑，不用它 -->
