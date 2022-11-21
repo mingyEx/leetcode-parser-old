@@ -12,6 +12,11 @@ Helps you debug `leetcode` problems
 
 ### Todo :   
 
+#### 0. To improve the debugging experience for grid and tree problems，Add a [natvis](https://www.cnblogs.com/X-Jun/p/8040916.html) file to modify the display in the locals window    
+  1. For linked lists, add a display similar to std::list  
+  2. For tree, the value of the pointer itself is hidden, and only the member data val is displayed. If there are left and right sub-objects, if it is nullptr, only null is displayed. If it has a value, only val is displayed.  
+  3. The two-dimensional grid displays its index in the form of [y,x].  
+  
 #### 1.Support for more complex input parameter types By modifying [the regular expression](https://github.com/KargathEx/LC-parser/blob/main/lc.h#L55)
 
 - [ ] string with punctuation，like `["a==b","b!=c","c==a"]`in [990](https://leetcode.com/problems/satisfiability-of-equality-equations/)
