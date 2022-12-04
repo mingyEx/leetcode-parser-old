@@ -13,18 +13,22 @@ namespace pretty_print
 {
   namespace detail
   {
-    template <typename T>
-    struct has_const_iterator
-    {
-    private:
-      template <typename U>
-      static constexpr decltype(std::declval<typename U::const_iterator>(), bool()) test(int) { return true; }
-      template <typename U>
-      static constexpr bool test(...) { return false; }
-    public:
-      static const bool value = test<T>(1);
-      using type = T;
-    };
+    //template <typename T>
+    //struct has_const_iterator
+    //{
+    //private:
+    //  template <typename U>
+    //  static constexpr decltype(std::declval<typename U::const_iterator>(), bool()) test(int) { return true; }
+    //  template <typename U>
+    //  static constexpr bool test(...) { return false; }
+    //public:
+    //  static const bool value = test<T>(1);
+    //  using type = T;
+    //};
+    template<typename T>
+    using simple_add_pointer_t = T*;
+    template<typename T>
+    inline constexpr bool has_const_iterator_v = requires{ typename simple_add_pointer_t<typename T::const_iterator>; };
     template <typename T>
     struct has_begin_end
     {
@@ -192,7 +196,8 @@ namespace pretty_print
   // Basic is_container template;specialize to derive from std::true_type for all desired container types
   template <typename T>
   struct is_container : public std::integral_constant<bool,
-    detail::has_const_iterator<T>::value&&
+    /*detail::has_const_iterator<T>::value*/
+    detail::has_const_iterator_v<T>&&
     detail::has_begin_end<T>::beg_value&&
     detail::has_begin_end<T>::end_value> { };
 
