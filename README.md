@@ -25,7 +25,7 @@ Helps you debug `leetcode` problems
 - [ ] symbols such as `["...","L.L","RR.","L.R"]` in [光线反射](https://leetcode.cn/contest/tianchi2022/problems/8KXuKl/)  
 
 - [ ] two-dimensional vector containing more than one types,for example `[[], ["leetcode"], [4], ["practice"], [3], [8], [10], [2], [6]]` in  [2296](https://leetcode.com/problems/design-a-text-editor/)
-
+- [ ] Eliminate error reporting for `[[ ]]`  
 I don't know how to modify the regex to correctly parse such strings, eager for your suggestions
 
 #### 2.print more data structures
