@@ -26,7 +26,7 @@ Helps you debug `leetcode` problems
 
 - [ ] two-dimensional vector containing more than one types,for example `[[], ["leetcode"], [4], ["practice"], [3], [8], [10], [2], [6]]` in  [2296](https://leetcode.com/problems/design-a-text-editor/)
 - [ ] Eliminate error reporting for `[[ ]]`  
-- [ ] `[[ ]]` should Should construct a `{}` instead of `{{}}` 
+- [ ] `[[ ]]` should construct a `{}` instead of `{{}}` [link](https://leetcode.cn/problems/maximum-star-sum-of-a-graph/)
 
 I don't know how to modify the regex to correctly parse such strings, eager for your suggestions
 
