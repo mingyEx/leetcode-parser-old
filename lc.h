@@ -5,6 +5,7 @@
 #include<regex>
 #include<sstream>
 #include<string>
+#include<type_traits>
 using std::cout;
 using std::endl;
 using std::vector;
@@ -43,11 +44,14 @@ namespace lc
     TreeNode* left;
     TreeNode* right;
     TreeNode(int x = 0) : val(x), left(nullptr), right(nullptr) {}
+    TreeNode(int x, TreeNode* left, TreeNode* right) : val(x), left(left), right(right) {}
     ~TreeNode() {
       if (left) delete left;
       if (right) delete right;
     }
   };
+
+  //template for int and long long
   template<typename T>
   std::vector<T> Vec(const std::string inputStr)
   {
@@ -64,8 +68,7 @@ namespace lc
       ret.push_back(temp);
       log = match.suffix();
     }
-    if (ret.empty())
-      std::cout << "构造Vector失败" << std::endl;
+    if (ret.empty()) std::cout << "Construct Vector failed" << std::endl;
     return ret;
   }
   template<typename T>
@@ -87,9 +90,56 @@ namespace lc
     }
     return ret;
   }
+
+  //template for string
+    //from:https://leetcode.cn/playground/new/empty/
+  inline string VecStr(string input) {
+    //assert(input.length() >= 2);
+    string result;
+    for (int i = 1; i < input.length() - 1; i++) {
+      char currentChar = input[i];
+      if (input[i] == '\\') {
+        char nextChar = input[i + 1];
+        switch (nextChar) {
+        case '\"': result.push_back('\"'); break;
+        case '/': result.push_back('/'); break;
+        case '\\': result.push_back('\\'); break;
+        case 'b': result.push_back('\b'); break;
+        case 'f': result.push_back('\f'); break;
+        case 'r': result.push_back('\r'); break;
+        case 'n': result.push_back('\n'); break;
+        case 't': result.push_back('\t'); break;
+        default: break;
+        }
+        i++;
+      }
+      else {
+        result.push_back(currentChar);
+      }
+    }
+    return result;
+  }
+
+
+  std::vector<string> Vec2Str(const std::string inputStr)
+  {
+    std::vector<string> ret;
+    const std::string pattern = R"((\[[^\[\]]*\]))";
+    std::smatch match;
+    std::string log = inputStr;
+    while (regex_search(log, match, (std::regex)pattern)) {
+      const std::string vec = match.str(1);
+      string temp = VecStr(vec);
+      ret.push_back(temp);
+      log = match.suffix();
+    }
+    if (ret.empty()) std::cout << "Construct vector<string> failed" << std::endl;
+    return ret;
+  }
   class Tree
   {
   private:
+    TreeNode* root;
     void print_Impl(TreeNode* n, bool left, std::string const& indent);
     TreeNode* copyTree(TreeNode* p)
     {
@@ -100,10 +150,10 @@ namespace lc
       return r;
     }
   public:
-    TreeNode* root;
     Tree(const std::string& input);
     Tree(TreeNode* p) { root = copyTree(p); }
     ~Tree();
+    TreeNode* get() { return root; }
     void print();
   };
   void print(TreeNode* p);
