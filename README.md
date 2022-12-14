@@ -23,8 +23,11 @@ for example `[[], ["leetcode"], [4], ["practice"], [3], [8], [10], [2], [6]]` in
   [2246. Longest Path With Different Adjacent Characters](https://leetcode.com/problems/longest-path-with-different-adjacent-characters/)  
 
 #### 2. To improve the debugging experience for grid and tree problems，Add a [natvis](https://www.cnblogs.com/X-Jun/p/8040916.html) file to modify the display in the locals window    
-  1. For linked lists, add a display similar to std::list  
-  2. For tree, the value of the pointer itself should be hidden, and only the member data `val` should be displayed. If there are left and right sub-objects, if it is nullptr, only null should be displayed. If it has a value, only `val` should be displayed.  
+  1. For linked lists, add a display similar to std::list    
+  2. For tree, the value of the pointer itself should be hidden, and only the member data `val` should be displayed.  
+  If there are left and right sub-objects:  
+    if it is nullptr, only null should be displayed.   
+    If it has a value, only `val` should be displayed.    
   3. The two-dimensional grid displays its index in the form of [y,x].  
   
 ### note
