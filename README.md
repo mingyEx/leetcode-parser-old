@@ -36,5 +36,5 @@ for example `[[], ["leetcode"], [4], ["practice"], [3], [8], [10], [2], [6]]` in
 [pprint](https://louisdx.github.io/cxx-prettyprint/)  
 [leetcode-helper](https://github.com/luckystone60/leetcode-helper)  
 [caide](https://github.com/slycelote/caide/issues/50)  
-[boost.Describe](https://www.boost.org/doc/libs/develop/libs/describe/doc/html/describe.html#example_json_rpc)
-[leetcode-playground-stringToString][https://leetcode.cn/playground/new/empty/]
+[boost.Describe](https://www.boost.org/doc/libs/develop/libs/describe/doc/html/describe.html#example_json_rpc)  
+[leetcode-playground-stringToString](https://leetcode.cn/playground/new/empty)
