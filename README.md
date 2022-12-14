@@ -45,3 +45,4 @@ I don't know how to modify the regex to correctly parse such strings, eager for 
 [leetcode-helper](https://github.com/luckystone60/leetcode-helper)  
 [caide](https://github.com/slycelote/caide/issues/50)  
 [boost.Describe](https://www.boost.org/doc/libs/develop/libs/describe/doc/html/describe.html#example_json_rpc)
+[leetcode-playground-stringToString][https://leetcode.cn/playground/new/empty/]
