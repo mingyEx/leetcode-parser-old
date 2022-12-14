@@ -52,6 +52,8 @@ namespace lc
   };
 
   //template for int and long long
+
+//for int and long long
   template<typename T>
   std::vector<T> Vec(const std::string inputStr)
   {
@@ -68,33 +70,37 @@ namespace lc
       ret.push_back(temp);
       log = match.suffix();
     }
-    if (ret.empty()) std::cout << "Construct Vector failed" << std::endl;
+    if (ret.empty())
+      std::cout << "Construct Vector failed" << std::endl;
     return ret;
   }
   template<typename T>
-  std::vector<std::vector<T>> Vec2(const std::string inputStr)
+  std::vector<std::vector<int>> Vec2(const std::string inputStr)
   {
     std::vector<std::vector<T>> ret;
     const std::string pattern = R"((\[[^\[\]]*\]))";
     std::smatch match;
-
     std::string log = inputStr;
     while (regex_search(log, match, (std::regex)pattern)) {
-      std::string vec = match.str(1);
-      ret.push_back(Vec<T>(vec));
+      const std::string vec = match.str(1);
+      ret.push_back(Vec<int>(vec));
       log = match.suffix();
     }
-
-    if (ret.empty()) {
-      std::cout << "构造Matrix失败" << std::endl;
-    }
+    if (ret.empty()) { 
+      ret = {};
+      std::cout << "Construct vector<vector<int>>failed" <<std::endl; }
     return ret;
   }
 
-  //template for string
+  //string
     //from:https://leetcode.cn/playground/new/empty/
-  inline string VecStr(string input) {
-    //assert(input.length() >= 2);
+
+  inline vector<string> VecStr(const string input) {
+    if (input.size() < 2) {
+      std::cout << "Construct vector<string> failed" << std::endl;
+      return{};
+    }
+    vector<string> res;
     string result;
     for (int i = 1; i < input.length() - 1; i++) {
       char currentChar = input[i];
@@ -116,26 +122,35 @@ namespace lc
       else {
         result.push_back(currentChar);
       }
+      if (input[i] == ',')
+      {
+        result.pop_back();
+        result.pop_back();
+        res.push_back(result.substr(1));
+        result = "";
+      }
     }
-    return result;
+    if (!result.empty()) {
+      result.pop_back();
+      res.push_back(result.substr(1));
+    }
+    return res;
   }
-
-
-  std::vector<string> Vec2Str(const std::string inputStr)
+  inline std::vector<std::vector<string>> Vec2Str(const std::string inputStr)
   {
-    std::vector<string> ret;
+    std::vector<std::vector<string>> ret;
     const std::string pattern = R"((\[[^\[\]]*\]))";
     std::smatch match;
     std::string log = inputStr;
     while (regex_search(log, match, (std::regex)pattern)) {
       const std::string vec = match.str(1);
-      string temp = VecStr(vec);
-      ret.push_back(temp);
+      ret.push_back(VecStr(vec));
       log = match.suffix();
     }
-    if (ret.empty()) std::cout << "Construct vector<string> failed" << std::endl;
+    if (ret.empty()) std::cout << "Construct vector<vector<string>> failed" << std::endl;
     return ret;
   }
+
   class Tree
   {
   private:
