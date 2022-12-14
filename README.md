@@ -19,10 +19,10 @@ Helps you debug `leetcode` problems
   
 #### 1.Support for more complex input parameter types By modifying [the regular expression](https://github.com/KargathEx/LC-parser/blob/main/lc.h#L55)
 
-- [ ] string with punctuation，like `["a==b","b!=c","c==a"]`in [990](https://leetcode.com/problems/satisfiability-of-equality-equations/)
-- [ ] string with spaces，like `["Hello userTwooo","Hi userThree","Wonderful day Alice","Nice day userThree"]` in [2284](https://leetcode.com/problems/sender-with-largest-word-count/)
-- [ ] symbols such as `[[">>v","v^<","<><"]]` in [2. 信物传送 ](https://leetcode.cn/contest/season/2022-spring/problems/6UEx57/)
-- [ ] symbols such as `["...","L.L","RR.","L.R"]` in [光线反射](https://leetcode.cn/contest/tianchi2022/problems/8KXuKl/)  
+- [x] string with punctuation，like `["a==b","b!=c","c==a"]`in [990](https://leetcode.com/problems/satisfiability-of-equality-equations/)
+- [x] string with spaces，like `["Hello userTwooo","Hi userThree","Wonderful day Alice","Nice day userThree"]` in [2284](https://leetcode.com/problems/sender-with-largest-word-count/)
+- [x] symbols such as `[[">>v","v^<","<><"]]` in [2. 信物传送 ](https://leetcode.cn/contest/season/2022-spring/problems/6UEx57/)
+- [x] symbols such as `["...","L.L","RR.","L.R"]` in [光线反射](https://leetcode.cn/contest/tianchi2022/problems/8KXuKl/)  
 
 - [ ] two-dimensional vector containing more than one types,for example `[[], ["leetcode"], [4], ["practice"], [3], [8], [10], [2], [6]]` in  [2296](https://leetcode.com/problems/design-a-text-editor/)
 - [ ] Eliminate error reporting for `[[ ]]`  
