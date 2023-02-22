@@ -47,8 +47,8 @@ namespace lc
     TreeNode(int x = 0) : val(x), left(nullptr), right(nullptr) {}
     TreeNode(int x, TreeNode* left, TreeNode* right) : val(x), left(left), right(right) {}
     ~TreeNode() {
-      if (left) delete left;
-      if (right) delete right;
+      delete left;
+      delete right;
     }
   };
 
